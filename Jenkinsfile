@@ -7,7 +7,7 @@ pipeline {
         stage('clean') {
             steps {
                 echo 'Czyszczenie!'
-                script {
+                withMaven {
                     sh 'mvn clean'
                 }
             }
