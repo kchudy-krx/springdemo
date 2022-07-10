@@ -15,5 +15,21 @@ pipeline {
                 }
             }
         }
+        stage('compile') {
+            steps {
+                echo 'Kompilacja'
+                withMaven {
+                    sh 'mvn compile'
+                }
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'Testowanie'
+                withMaven {
+                    sh 'mvn test'
+                }
+            }
+        }
     }
 }
