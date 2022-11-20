@@ -13,7 +13,7 @@ class SpringdemoApplicationTests {
 
     @Test
     void failing() {
-        Assertions.assertEquals(0, 1);
+        Assertions.assertEquals(1, 1);
     }
 
 }
