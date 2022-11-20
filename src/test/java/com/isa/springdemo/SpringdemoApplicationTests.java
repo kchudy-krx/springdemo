@@ -9,6 +9,7 @@ class SpringdemoApplicationTests {
 
     @Test
     void contextLoads() {
+        Assertions.assertEquals(0, 10 % 2);
     }
 
     @Test
